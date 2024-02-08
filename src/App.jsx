@@ -1,6 +1,10 @@
+import Ui from "./components/ui.jsx";
 
+function App(data) {
 
-function App() {
+    return (
+        <Ui data={data}/>
+    )
 
 }
 
