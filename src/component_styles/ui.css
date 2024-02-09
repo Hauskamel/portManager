@@ -1,0 +1,7 @@
+.ui-container {
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 100px;
+    text-align: center;
+}
