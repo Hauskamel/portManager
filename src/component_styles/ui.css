@@ -1,7 +1,20 @@
 .ui-container {
+    display: flex;
     position: absolute;
     left: 50vw;
     transform: translateX(-50%);
     top: 100px;
     text-align: center;
+    width: 100vw;
+}
+
+.ui-stats {
+    text-align: left;
+    position: absolute;
+    right: 90px;
+}
+
+.ui-inventory {
+    position: absolute;
+    left: 150px;
 }
