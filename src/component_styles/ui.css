@@ -15,6 +15,7 @@
 }
 
 .ui-inventory {
+    text-align: left;
     position: absolute;
     left: 150px;
 }
