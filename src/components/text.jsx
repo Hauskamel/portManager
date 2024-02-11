@@ -1,4 +1,4 @@
-function Text () {
+function Text (props) {
 
 
 

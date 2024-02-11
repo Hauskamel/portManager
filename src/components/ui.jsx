@@ -10,6 +10,7 @@ function Ui (props) {
     let SHIPSOWNED = props.data.data.shipsOwned
     let DOCKS = props.data.data.docks
 
+
     // Inventory
     const WOOL = props.data.inventory.wool
     const TEXTILES = props.data.inventory.textiles
@@ -42,7 +43,9 @@ function Ui (props) {
                 <h3 className="money">Money: {MONEY}</h3>
                 <h3 className="shipsOwned">Ships you own: {SHIPSOWNED}</h3>
                 <h3 className="docks">Docks: {DOCKS}</h3>
-                <button className="end_round_btn">End round</button>
+
+                <h4>Round: {props.roundCounter}</h4>
+
             </div>
         </div>
     )
