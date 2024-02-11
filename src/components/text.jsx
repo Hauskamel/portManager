@@ -1,9 +1,10 @@
-function Text () {
+function Text (props) {
+
 
 
     return (
         <>
-
+            <p></p>
         </>
     )
 }
