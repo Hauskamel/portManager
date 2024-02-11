@@ -11,8 +11,15 @@ function Ui (props) {
     let DOCKS = props.data.data.docks
 
     // Inventory
-    let WOOL = props.data.inventory.wool
-    let TEXTILES = props.data.inventory.textiles
+    const WOOL = props.data.inventory.wool
+    const TEXTILES = props.data.inventory.textiles
+    const COAL = props.data.inventory.coal
+    const IRON = props.data.inventory.iron
+    const SALT = props.data.inventory.salt
+    const GRAIN = props.data.inventory.grain
+    const FISH = props.data.inventory.fish
+    const TIMBER = props.data.inventory.timber
+    const SLAVES = props.data.inventory.slaves
 
     return (
         <div className="ui-container">
@@ -21,6 +28,13 @@ function Ui (props) {
                 <h3>Your Inventory:</h3>
                 <p>Wool: {WOOL}</p>
                 <p>Textiles: {TEXTILES}</p>
+                <p>Coal: {COAL}</p>
+                <p>Iron: {IRON}</p>
+                <p>Salt: {SALT}</p>
+                <p>Grain: {GRAIN}</p>
+                <p>Fish: {FISH}</p>
+                <p>Timber: {TIMBER}</p>
+                <p>Slaves: {SLAVES}</p>
             </div>
 
             <div className="ui-stats">
