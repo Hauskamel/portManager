@@ -5,7 +5,6 @@ import './index.css'
 
 
 const STARTING_CONDITIONS = {
-    year: 1695,
     money: 5000,
     shipsOwned: 0,
     docks: 2

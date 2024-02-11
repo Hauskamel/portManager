@@ -39,7 +39,7 @@ function Ui (props) {
             </div>
 
             <div className="ui-stats">
-                <h3 className="year">Year: {YEAR}</h3>
+                <h3 className="year">Year: {props.year}</h3>
                 <h3 className="money">Money: {MONEY}</h3>
                 <h3 className="shipsOwned">Ships you own: {SHIPSOWNED}</h3>
                 <h3 className="docks">Docks: {DOCKS}</h3>
