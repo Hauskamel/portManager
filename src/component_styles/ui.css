@@ -1,5 +1,4 @@
 .ui-container {
-    display: flex;
     position: absolute;
     left: 50vw;
     transform: translateX(-50%);

@@ -4,11 +4,13 @@ import App from './App.jsx'
 import './index.css'
 
 
+
 const STARTING_CONDITIONS = {
     year: 1800,
     money: 5000,
     shipsOwned: 0,
-    docks: 2
+    docks: 2,
+    round: 1
 }
 
 const STARTING_INVENTORY = {
