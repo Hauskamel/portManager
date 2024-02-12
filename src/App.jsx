@@ -6,7 +6,7 @@ import {useState} from "react";
 function App(data) {
 
     const [round, setRound] = useState(1)
-    const [year, setYear] = useState(1695)
+    const [year, setYear] = useState(data.data.year)
 
     function endRound () {
         const newRound = round + 1
@@ -28,7 +28,7 @@ function App(data) {
                 year={year}
                 roundCounter={round}
             />
-            <Text/>
+            <Text round={round}/>
 
 
             <button className="end_round_btn" onClick={endRound}>End round</button>
