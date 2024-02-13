@@ -14,15 +14,15 @@ const STARTING_CONDITIONS = {
 }
 
 const STARTING_INVENTORY = {
-    wool: 10,
-    textiles: 10,
-    coal: 10,
-    iron: 10,
-    salt: 10,
-    grain: 10,
-    fish: 10,
-    timber: 10,
-    slaves: 1
+    wool: 0,
+    textiles: 0,
+    coal: 0,
+    iron: 0,
+    salt: 0,
+    grain: 0,
+    fish: 0,
+    timber: 0,
+    slaves: 0
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
