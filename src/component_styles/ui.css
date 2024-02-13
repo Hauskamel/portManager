@@ -1,8 +1,11 @@
+.main-container {
+    position: relative;
+}
+
 .ui-container {
+    justify-content: space-around;
     display: flex;
-    position: absolute;
     left: 50vw;
-    transform: translateX(-50%);
     top: 100px;
     text-align: center;
     width: 100vw;
@@ -10,11 +13,17 @@
 
 .ui-stats {
     text-align: left;
-    position: absolute;
     right: 90px;
 }
 
 .ui-inventory {
     text-align: left;
     left: 150px;
+}
+
+
+.end_round_btn {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
 }
