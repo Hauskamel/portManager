@@ -7,7 +7,6 @@ function Ui (props) {
     // Conditions
     let YEAR = props.data.data.year;
     let MONEY = props.data.data.money;
-    let SHIPSOWNED = props.data.data.shipsOwned
     let DOCKS = props.data.data.docks
 
 
@@ -30,23 +29,22 @@ function Ui (props) {
                 <p>Wool: {WOOL}</p>
                 <p>Textiles: {TEXTILES}</p>
                 <p>Coal: {COAL}</p>
-                <p>Iron: {IRON}</p>
-                <p>Salt: {SALT}</p>
-                <p>Grain: {GRAIN}</p>
-                <p>Fish: {FISH}</p>
-                <p>Timber: {TIMBER}</p>
                 <p>Slaves: {SLAVES}</p>
             </div>
 
             <div className="ui-stats">
                 <h3 className="year">Year: {props.year}</h3>
                 <h3 className="money">Money: {MONEY}</h3>
-                <h3 className="shipsOwned">Ships you own: {SHIPSOWNED}</h3>
                 <h3 className="docks">Docks: {DOCKS}</h3>
 
                 <h4>Round: {props.roundCounter}</h4>
 
             </div>
+
+            <div className="trader-container">
+
+            </div>
+
         </div>
     )
 }

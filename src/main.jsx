@@ -3,17 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+const TRADER = [];
 
-
-const STARTING_CONDITIONS = {
-    year: 1800,
-    money: 5000,
-    shipsOwned: 0,
-    docks: 2,
-    round: 1
-}
-
-const STARTING_INVENTORY = {
+const ALL_GOODS = {
     wool: 0,
     textiles: 0,
     coal: 0,
@@ -25,8 +17,23 @@ const STARTING_INVENTORY = {
     slaves: 0
 }
 
+
+const STARTING_CONDITIONS = {
+    year: 1799,
+    money: 1000,
+    docks: 1,
+    round: 1
+}
+
+const STARTING_INVENTORY = {
+    wool: 0,
+    textiles: 0,
+    coal: 0,
+    slaves: 0
+}
+
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <App data={STARTING_CONDITIONS} inventory={STARTING_INVENTORY} />
+        <App trader={TRADER} data={STARTING_CONDITIONS} inventory={STARTING_INVENTORY} />
     </React.StrictMode>,
 )
