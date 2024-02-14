@@ -1,10 +1,11 @@
 import Ui from "./components/ui.jsx";
 import Text from "./components/text.jsx";
 import {useState} from "react";
-import Trader from "./components/trader.js";
 
 
 function App(data) {
+    const TRADER = [];
+
     const [round, setRound] = useState(data.data.round);
     const [year, setYear] = useState(data.data.year);
 
@@ -20,10 +21,9 @@ function App(data) {
         return newRound;
     }
 
-
-    function addTrader () {
-
-    }
+    // function addTrader () {
+    //
+    // }
 
 
     return (
