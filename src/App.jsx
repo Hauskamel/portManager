@@ -1,14 +1,14 @@
 import Ui from "./components/ui.jsx";
 import Text from "./components/text.jsx";
 import {useState} from "react";
+import Trader from "./components/trader.js";
 
 
 function App(data) {
+    const [round, setRound] = useState(data.data.round);
+    const [year, setYear] = useState(data.data.year);
 
-    const [round, setRound] = useState(1)
-    const [year, setYear] = useState(1695)
-
-    function endRound () {
+    function endRound() {
         const newRound = round + 1
         setRound(newRound)
 
@@ -17,19 +17,25 @@ function App(data) {
             setYear(newYear)
             return newYear
         }
-
         return newRound;
     }
 
+
+    function addTrader () {
+
+    }
+
+
     return (
         <>
-            <Ui
-                data={data}
-                year={year}
-                roundCounter={round}
-            />
-            <Text/>
-
+            <div className="main-container">
+                <Ui
+                    data={data}
+                    year={year}
+                    roundCounter={round}
+                />
+                <Text round={round}/>
+            </div>
 
             <button className="end_round_btn" onClick={endRound}>End round</button>
         </>
