@@ -1,4 +1,4 @@
-function Text(props) {
+function Text (props) {
 
     if (props.round < 2) {
         return (
